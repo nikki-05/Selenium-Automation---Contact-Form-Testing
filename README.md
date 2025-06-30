@@ -12,15 +12,45 @@ Automated UI test for the contact form on [seleniumframework.com/lander](https:/
 
 ## 🚀 Project Structure
 src/
+
 ├── main/
+
 │ └── java/
+
 │ └── pages/
+
 │ └── LanderPage.java
+
 │ └── utils/
+
 │ └── WebDriverManager.java
+
 ├── test/
+
 │ └── java/
+
 │ └── tests/
+
 │ └── LanderPageTest.java
+
 │ └── testdata/
+
 │ └── SampleData.java
+
+
+## 🧪 What This Test Does
+- Launches Chrome browser
+- Opens the contact page
+- Switches to iframe
+- Fills in name, email, and message
+- Submits the form
+
+## ✅ How to Run
+Make sure you have:
+- ChromeDriver installed and path configured in `WebDriverManager.java`
+- JDK 17 or later installed
+- Maven installed
+
+Then run the test using:
+```bash
+mvn test
